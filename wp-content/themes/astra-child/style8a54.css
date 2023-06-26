@@ -1,0 +1,192 @@
+/**
+Theme Name: Astra-Child
+Author: Brainstorm Force
+Author URI: http://wpastra.com/about/
+Description: Astra is the fastest, fully customizable & beautiful theme suitable for blogs, personal portfolios and business websites. It is very lightweight (less than 50KB on frontend) and offers unparalleled speed. Built with SEO in mind, Astra comes with schema.org code integrated so search engines will love your site. Astra offers plenty of sidebar options and widget areas giving you a full control for customizations. Furthermore, we have included special features and templates so feel free to choose any of your favorite page builder plugin to create pages flexibly. Some of the other features: # WooCommerce Ready # Responsive # Compatible with major plugins # Translation Ready # Extendible with premium addons # Regularly updated # Designed, Developed, Maintained & Supported by Brainstorm Force. Looking for a perfect base theme? Look no further. Astra is fast, fully customizable and beautiful theme!
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+html {
+  overflow-x: hidden;
+}
+
+.img-product .swiper-slide-inner {
+}
+
+.img-product .swiper-slide-inner .swiper-slide-image {
+  height: 320px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-product img.premium-modal-trigger-img {
+  height: 420px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+}
+
+.gallery-custom .gallery-item img {
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container-gallery-custom .gallery-custom .gallery-item {
+  padding: 10px !important;
+}
+/* .container-gallery-custom .gallery-custom .gallery-item:last-child {
+  padding-right: 0px !important;
+}
+.container-gallery-custom .gallery-custom .gallery-item:first-child {
+  padding-left: 0px !important;
+} */
+
+.container-gallery-custom .gallery-custom .gallery-item a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: .2s;
+}
+
+.container-gallery-custom .gallery-custom .gallery-item a img {
+  height: 320px;
+  object-fit: cover;
+  object-position: center;
+  transition: all .5s ease;
+}
+
+.container-gallery-custom .gallery-custom .gallery-item a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.4);
+  opacity: 0;
+  transition: all .5s ease;
+  z-index: 1;
+}
+
+.container-gallery-custom .gallery-custom .gallery-item:hover a:before {
+  opacity: 1;
+}
+
+.container-gallery-custom .gallery-custom .gallery-item:hover a img {
+  transform: scale(1.1);
+}
+
+.main-header-menu .menu-item a.menu-link:focus {
+  outline: none;
+}
+
+.main-header-menu .menu-item a.menu-link {
+  transition: .2s;
+}
+
+.main-header-menu .menu-item a.menu-link:hover {
+  opacity: .78;
+}
+
+header#masthead {
+  position: fixed !important;
+}
+
+header#masthead .main-header-bar {
+  transition: all ease .5s;
+  opacity: 1;
+  top: 0;
+}
+
+header#masthead.hide .main-header-bar {
+  opacity: 0;
+  top: -56px;
+}
+
+header#masthead .main-header-bar .menu-item .menu-link { 
+  transition: .2s;
+  padding: 0px 22px;
+  font-weight: 400;
+}
+
+header#masthead.on-scroll .main-header-bar {
+  background-color: rgba(0,0,0,.92);
+  box-shadow: 0px 1px 15px 0px rgba(0,0,0,.05);
+}
+
+header#masthead.on-scroll .main-header-bar .menu-item .menu-link {
+  transition: .2s;
+  color: #fff;
+}
+
+.desc-max {
+  max-width: 80%;
+}
+
+.ast-logo-title-inline .ast-site-identity.site-branding {
+  padding: 8px 0px;
+}
+
+.custom-padding .elementor-column > .elementor-element-populated {
+  padding-top: 55px !important;
+  padding-bottom: 55px !important;
+}
+
+.premium-modal-box-modal-content {
+  border-radius: 0px !important;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.section-item-product {
+  position: relative;
+}
+
+.section-item-product .elementor-widget-wrap {
+  padding: 0px !important;
+}
+
+.title-product {
+  /* margin-top: -40px; */
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 30px 10px 25px 10px;
+  background: linear-gradient(transparent,rgba(0,0,0,.75),rgba(0,0,0,.94));
+}
+
+.title-product h4 {
+  color: #fff;
+}
+
+.chaty-whatsapp-message {
+  line-height: 1.3 !important;
+}
+
+@media(max-width:922px) {
+  .container-gallery-custom .gallery-custom .gallery-item {
+    padding: 10px 5px !important;
+  }
+}
+
+@media(max-width:767px) {
+  #n2-ss-1item2 {
+    text-align: center !important;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1920px) {
+  .custom-banner .n2-ss-slide {
+    height: 100vh !important;
+  }
+}
