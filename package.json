@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "astro": "^2.7.0",
-    "astro-compress": "^1.1.48"
+    "astro-compress": "^1.1.48",
+    "astro-imagetools": "^0.8.1"
   }
 }
